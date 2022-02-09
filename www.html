@@ -1,0 +1,198 @@
+<!DOCTYPE HTML>
+<html>
+	<head><title>Login</title>
+		<link rel="icon" href="img/favicon_(2).png">
+		<link rel="stylesheet" href="css.css">
+		<style>
+			::selection{
+				background:#0009;
+				color:#fff;
+			}
+			body{
+					background-image:linear-gradient(rgba(0,75,0,0.4),rgba(0,120,0,0.4)), url("img/1.jpg");
+					background-position: center;
+					background-size: cover;
+					background-attachment: fixed;
+					height: auto;
+				}
+			.box{
+				position:absolute;
+				top:52%;
+				left:50%;
+				transform:translate(-50%,-50%);
+				width:400px;
+				height:320px;
+				background-color:#0007;
+				padding: 15px 40px;
+				border-radius:5px;
+				box-sizing: border-box;
+				
+			}
+			.box h2{
+				color:#fff;
+				text-align:center;
+				font-family:arial;
+				margin-top:20px;
+				margin-bottom: 45px;
+				pointer-events:none;
+			}
+			.inputbox{
+					position:relative;
+					
+			
+			}
+			lebel{
+				position:absolute;
+				top:0;
+				left:0;
+				font-family:arial;
+				font-size:15px;
+				letter-spacing:1px;
+				color:#fff;
+				transition: .5s;
+				pointer-events:none;
+				
+			}
+			.usrnm{
+				width:100%;
+				border:none;
+				color:#fff;
+				font-size:15px;
+				letter-spacing:1px;
+				border-bottom: 1px solid #fff;
+				margin-bottom:25px;
+				padding: 5px;
+				outline:none;
+				background: transparent;
+			}
+			.usrnm:focus{
+				border-bottom: 1px solid #03a9f4;
+				caret-color: #03a9f4;
+			}
+			.mrgn{margin-bottom:5px;}
+			.box input[type="submit"]{
+				border:none;
+				outline:none;
+				color:#fff;
+				font-family:arial;
+				font-size:15px;
+				background-color:#03a9f4;
+				padding:12px 16px;
+				border-radius:5px;
+				cursor:pointer;
+				transition:0.3s ease;
+			}
+			.box input[type="submit"]:hover{
+				background:#2c8bb5;
+			}
+	
+			hr{
+				width:40px;
+				margin:auto;
+				margin-top:3px;
+			}
+			.box .inputbox input:focus ~ lebel,
+			.box .inputbox input:valid ~ lebel
+			{
+				top: -18px;
+				left:0;
+				color:#03a9f4;
+				font-size:13px;
+			}
+			
+			.logo{
+				background-image:url("img/real photo.jpg");
+				background-repeat:no-repeat;
+				background-position:center;
+				background-size: cover;
+				height:80px;
+				width:80px;
+				border:1px solid #fff;
+				position:absolute;
+				top:29%;
+				left:50%;
+				transform:translate(-50%,-50%);
+				z-index:10;
+				border-radius:50%;
+				transition: box-shadow 0.2s ease, height 0.1s ease, width 0.1s ease; 
+			}
+			.logo:hover{
+					width: 81px;
+					height: 81px;
+					border: 1px solid #aaa;
+					cursor: pointer;
+					box-shadow: 0px 19px 30px 0px;
+				}
+		
+		</style>
+	</head>
+	<body>
+	
+	
+		  <nav>
+		<ul>
+			<li><a href="menu-bar.html" class="active">home</a></li>
+			<li><a href="menu-bar - Copy.html">blog</a></li>
+			<li><a href="#">education</a></li>
+			<li class="increase"><a href="#">sports &raquo;</a>
+				<ul>
+					<li><a href="#">ludo</a></li>
+					<li><a href="#">chess</a></li>
+					<li><a href="#">basketball</a></li>
+					<li><a href="#">football</a></li>
+					<li><a href="#">cricket &raquo;</a>
+						<ul>
+							<li><a href="#">play online</a></li>
+							<li><a href="#">play with firends</a></li>
+							<li><a href="#">classic</a></li>
+							<li><a href="#">you vs computer</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li><a href="#">Tutorials</a></li>
+			<li><a href="#">Techcrunch</a></li>
+			<li><a href="#">Software</a></li>
+			<li><a href="#">about us</a></li>
+			<li><a href="#">login</a></li>
+		</ul>
+	  </nav>
+	
+	
+	
+
+	
+	<div class="logo"></div>
+		<div class="box">
+			<h2>Login<hr color="#626262"></h2>
+			<form action="" method="post">
+					<div class="inputbox">
+					
+					<input type="text" class="usrnm" name="username" autocomplete="off" value="" required>
+					<lebel>Username<b>:</b></lebel>
+					</div>
+					
+					<br>
+					
+					<div class="inputbox">
+					<input type="password" class="usrnm mrgn" name="password" value="" required>
+					<lebel>Password<b>:</b></lebel>
+					</div>
+					
+					<br>
+					
+					<input type="submit" name="submit" value="Sign-in" onclick="f_name()">
+			</form>
+		</div>
+		<script>
+			function f_name(){
+				alert("Successfully submitted");
+			}
+		</script>
+		<script type="text/javascript">
+			document.addEventListener("contextmenu",function(razuahmed){
+				razuahmed.preventDefault();
+			});
+		</script>
+	</body>
+</html>
